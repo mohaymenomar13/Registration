@@ -1,0 +1,220 @@
+body {
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12) fixed;
+}
+.home {
+    margin-left: 20px;
+    border-bottom: 0;
+    font-size: 30px;
+    
+}
+.home:hover {
+    color: white;
+}
+.homeM {
+    padding-top: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aniOpen {
+    animation: aniOpen ease-out 0.4s;
+}
+@keyframes aniOpen {
+    0% {transform:scaleY(0);}
+    100% {transform: scaleY(1);}
+}
+.aniClose {
+    animation: aniClose ease-in 0.4s;
+}
+@keyframes aniClose {
+    from {transform: scaleY(1);}
+    to {transform: scaleY(0);}
+}
+.test > *:not(.dialogMessage) {
+    filter: blur(3px)
+}
+.test1 {
+    display: none;
+}
+.titlD {
+    border-bottom: black 1px solid;
+    margin: -10px 0 10px 0;
+    padding: -10px 0 0px 0;
+}
+.titlD > h1 {
+    margin: 10px 0 5px 0;
+    font-family:'Courier New', Courier, monospace;
+}
+.mother {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    height: 100vh !important;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+}
+.child {
+    width: auto;
+    text-align: start;
+    height: auto;
+    color: black;
+    font-size: large;
+    padding: 10px;
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.29);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.29);
+}
+.divFirstN {
+    margin-bottom: -5px;
+    display: flex;
+}
+.inputBox {
+    padding: 5px;
+}
+.name {
+    font-weight: bold;
+    transition: 0;
+}
+.name:hover {
+    color: red;
+}
+.spanText {
+    margin-left: 5px;
+    color: rgb(85, 85, 85);
+}
+.spanPhoto {
+    border: 2px solid black;
+    margin-left: 5px;
+    font-weight: bold;
+}
+.spanPhoto:active {
+    font-weight: normal;
+}
+.boxEmpty {
+    display: none;
+    margin-bottom: -5px;
+    top: -10px;
+    color: red;
+    font-size: 15px;
+    margin-left: 3px;
+}
+.box {
+    background: transparent;
+    width: 100%;
+    height: 30px;
+    border: transparent;
+    border-bottom: black 2px solid;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-top: -5px;
+}
+.photo {
+    border: 1px solid black;
+}
+.birthdate {
+    width: 169px;
+    text-transform: lowercase;
+}
+.dialogMessage {
+    top: 30%;
+    width: 450px;
+    height: auto;
+    text-align: start;
+    font-size: 20px;
+    border-radius: 20px;
+    background: rgb(255, 187, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.356);
+    border: 1px solid rgba(0, 0, 0, 0.466);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.confirmP {
+    font-size: 25px;
+}
+.dialogExit {
+    position:absolute;
+    font-weight: bold;
+    cursor: pointer;
+    top: -15px;
+    left: 455px;
+    font-family: monospace;
+}
+.submitDialog {
+    margin-bottom: -25px;
+    margin-top: -25px;
+    transform: scale(1.2);
+    text-align: center;
+    height: 25px;
+    width: 50px;
+    font-weight: lighter;
+    margin-right: 25px;
+    transition: 0.2s;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: lime;
+    border: solid black 1px;
+}
+.submitDialog:hover {
+    transform: scale(1.5);
+    background-color: rgb(0, 116, 35);
+}
+.submitDialogN {
+    transform: scale(1.1);
+    display: inline-block;
+}
+.submitButton {
+    width: 100px;
+    height: 40px;
+    background-color: lime;
+    border: 2px solid black;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 10px 10px 10px 10px;
+    transition: 0.5s;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+}
+.submitButton:hover {
+    width: 110px;
+    background-color: rgb(0, 116, 35);
+}
+.dialogMMother {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.dialogInput {
+    display: none;
+}
+.dialogInputFGender {
+    display: none;
+}
+.boxEmptyActive {
+    display: inline-block;
+    border-color: red;
+}
+#ppFirstN {
+    white-space: nowrap;
+}
+.dialogDetails {
+    display: inline;
+}
+.displayD {
+    padding: 0 5px 0 5px;
+    color: black;
+    background: rgba(255, 255, 255, 0.29);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.29);
+}
